@@ -1,3 +1,26 @@
+
 body {
-       color: red; 	
-} 
+
+}
+
+h1 {
+        font-weight: bold;
+        font-size: 2em;
+}
+                h2 {
+                        font-style: italic;
+                        font-size: 1.5vw;
+                }
+                .page-header {
+                        margin-top:0;
+                        background-color:tomato;
+                        color: white;
+                        padding: 1vw;
+                        font-family: Arial;
+                        font-size:3vw;
+
+                }
+                .page-contents {
+                        font-size:0.5vw;
+                }
+
