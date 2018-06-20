@@ -1,0 +1,51 @@
+
+
+<html>
+	<head>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}"/>
+	</head>
+	<!--transfer to external css later! -->
+	<style>
+body { 
+
+} 
+
+h1 { 
+	font-weight: bold;
+	font-size: 2em;
+}
+		h2 { 
+			font-style: italic; 
+			font-size: 1.5vw; 
+		}
+		.page-header {
+			margin-top:0;
+			background-color:tomato;
+			color: white;
+			padding: 1vw;
+			font-family: Arial;
+			font-size:3vw; 
+
+		} 
+		.page-contents { 
+			font-size:0.5vw;
+		} 
+	</style>
+	<body>
+		<div class= "page-header">
+			<h1> Welcome to Bookflood! </h1>
+		</div>
+		<h2>
+			Jolabokaflod, the Icelandic word for ''Christmas Book Flood,'' describes the Iceland's national culture of gifting books as presents on December 24th, and then spending the night reading. Inspired by the decades-long tradition, America is starting its own Christmas Book Flood, starting from here. With Book Flood, you can create a profile, connect with friends, let others know which books you've read and you like, what books your friends and you have read and liked, and what books you should consider buying for a newfound American tradition of a flourishing literary adventure. Welcome to Book Flood.
+
+		</h2>
+		<div class= "page contents"> 
+		<!--{{people}}-->
+		{% for person in people %} 
+		{{person}}
+		{% endfor %}
+		</div>
+	</body>
+
+</html>

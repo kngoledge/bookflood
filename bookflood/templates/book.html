@@ -1,0 +1,18 @@
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="./../../static/main.css">
+        </head>
+        <body>
+                <div class="topnav">
+                        <a href="home.html">Home</a>
+                        <a href="person.html">Profile</a>
+                        <a href="book.html">Books</a>
+                </div>
+                <p> All Books </p>
+		<!--{{books}}-->
+		{% for book in books %} 
+                <br>{{book}} </br>
+		{% endfor %}
+        </body>
+
+</html>
