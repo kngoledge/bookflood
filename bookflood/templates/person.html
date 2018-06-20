@@ -1,15 +1,14 @@
 <html>
-        <head>
-                <link rel="stylesheet" type="text/css" href="./../../static/main.css">
-        </head>
-        <body>
-                <div class="topnav">
-                        <a href="home.html">Home</a>
-                        <a href="person.html">Profile</a>
-                        <a href="#book.html">Books</a>
-                </div>
-                <p> Your profile </p>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./../../static/main.css">
+	</head>
+	<div class="topnav">
+		<a href={% url 'home' %}>Home</a>
+		<a href={% url 'book' %}>Books</a>
+	</div>
+	<body>
+		<p> Your profile </p>
 		{{person}}
-        </body>
+	</body>
 
 </html>

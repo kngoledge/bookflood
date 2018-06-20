@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./../../static/main.css">
+	</head>
+	<body>
+
+		<div class="topnav">
+			<a href={% url 'home' %}>Home</a>
+			<a href={% url 'book' %}>Books</a>
+		</div>
+
+		{% block content %} 
+		{% endblock %} 
+
+        </body>
+
+</html>
+

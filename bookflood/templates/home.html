@@ -40,6 +40,11 @@ h1 {
 			Jolabokaflod, the Icelandic word for ''Christmas Book Flood,'' describes the Iceland's national culture of gifting books as presents on December 24th, and then spending the night reading. Inspired by the decades-long tradition, America is starting its own Christmas Book Flood, starting from here. With Book Flood, you can create a profile, connect with friends, let others know which books you've read and you like, what books your friends and you have read and liked, and what books you should consider buying for a newfound American tradition of a flourishing literary adventure. Welcome to Book Flood.
 
 		</h2>
+		 <div class="topnav">
+			 <a href={% url 'home' %}>Home</a>
+			 <a href={% url 'book' %}>Books</a>
+                </div>
+
 		<div class= "page contents"> 
 		<!--{{people}}-->
 		{% for person in people %} 

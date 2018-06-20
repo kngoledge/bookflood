@@ -1,18 +1,13 @@
-<html>
-        <head>
-                <link rel="stylesheet" type="text/css" href="./../../static/main.css">
-        </head>
-        <body>
-                <div class="topnav">
-                        <a href="home.html">Home</a>
-                        <a href="person.html">Profile</a>
-                        <a href="book.html">Books</a>
-                </div>
-                <p> All Books </p>
-		<!--{{books}}-->
-		{% for book in books %} 
-                <br>{{book}} </br>
-		{% endfor %}
-        </body>
+{% extends 'base.html' %}
+{% block content %}
+{{book_list}} 
+<br></br>
+{% for book in book_list %}
+<a href="{% url 'bookdetail' pk=book.id %}">{{book.title}}
+	<br></br>
+	{{book.author}}</a>
+<br></br>
+{% endfor %} 
+<a href="{% url 'addbook' %}" >Add Book</a>
 
-</html>
+{% endblock %}

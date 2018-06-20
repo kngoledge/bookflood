@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./../../static/main.css">
+	</head>
+	<body>
+
+		<div class="topnav">
+			<a href={% url 'home' %}>Home</a>
+			<a href={% url 'book' %}>Books</a>
+		</div>
+
+		<p> All Books </p>
+		{{book.name}} 
+		{{book.title}} 
+		{{book.author}} 
+	</body>
+
+</html>
+
+
